@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string-interpolation</title>
+</head>
+<body>
+    <h1>string-interpolation</h1>
+
+
+    <script>
+        let name = "John";
+        let age = 30;
+        let msg1 = 'My name is ' + name + ' and I am ' + age + ' years old.';
+
+        // string interpolation
+        let msg2 = `My name is ${name} and I am ${age} years old.`;
+        console.log(msg1);
+        console.log(msg2);
+
+        let x = 10;
+        let y = 20;
+        let add = (x,y) => x + y;
+        console.log(`Sum of ${x} and ${y} is ${add(x,y)}`);
+
+       
+        const PI = 3.142;
+        let getVolCyl = (r, h) => PI * r * r * h;
+
+        let radius = 10;
+        let height = 25;
+        // let vol = 
+        console.log(`Volume of cylinder with radius ${radius} cm and height ${height}cm is ${getVolCyl(radius,height)} cubic cm`);
+
+
+        // let greet = (name) => `Hello ${name}, welcome to the world of JS`;
+
+        // // 
+        // console.log(greet('John'));
+
+
+    </script>
+</body>
+</html>

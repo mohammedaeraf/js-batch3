@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Intro</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1 {
+            color: brown;
+            /* 1em = 16 px */
+            font-size: 1.5em; 
+        }
+    </style>
+
+    <script>
+        // JavaScript code here
+        function changeHeadingColor() {
+            let pageHeading = document.getElementById("pageHeading");
+            pageHeading.style.color = 'blue';
+            pageHeading.style.fontSize = '3em';
+            pageHeading.style.border = "2px solid red";
+            pageHeading.style.padding = "20px";
+            pageHeading.style.textAlign = "center";
+        }
+
+        for (let i = 0; i < 10; i++) {
+                        
+        }
+
+    </script>
+</head>
+<body>
+    <h1 id="pageHeading">JS Basics</h1>
+    <div>
+        <button onclick="changeHeadingColor()">Click Me</button>
+    </div>
+</body>
+</html>
